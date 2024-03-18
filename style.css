@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Fuente moderna */
+    background-color: #0f0f0f; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto blanco */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1); /* Sombra blanca */
+}
+
+li a {
+    display: block;
+    color: #ccc; /* Color de texto gris claro */
+    padding: 20px; /* Aumentar el padding para un aspecto más moderno */
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para efectos */
+}
+
+li a.active {
+    background-color: #04AA6D;
+    color: white;
+    border-left: 4px solid #fff; /* Borde izquierdo verde */
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+
+.contenedor {
+    margin-left: 25%;
+    padding: 40px; /* Aumentar el padding para más espacio alrededor del contenido */
+    min-height: 100vh; /* Altura mínima igual al 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #000; /* Fondo oscuro */
+    transition: background-color 0.3s ease; /* Transición suave */     
+}
+
+.contenedor:hover {
+    background-color: #36433a;/* Negro */
+}
+
+.contenedor h2,
+.contenedor h3,
+.contenedor p {
+    margin-bottom: 20px; /* Espacio entre los elementos */
+}
+
+.contenedor h3 {
+    font-size: 24px; /* Tamaño mediano de fuente */
+}
+
+.contenedor p {
+    font-size: 18px; /* Tamaño de fuente normal */
+}
+
+.contenedor h4 {
+    font-size: 24px; /* Tamaño mediano de fuente */
+    color: #fff; /* Texto blanco */
+    font-weight: bold; /* Negrita */
+}
